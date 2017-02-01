@@ -1,11 +1,40 @@
-﻿<!DOCTYPE html>
+﻿﻿<!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
-	<meta charset="utf-8" />
+    <meta charset="utf-8" />
+
+    <script>
+        function suma(num1, num2) {
+            document.getElementById("demo").innerHTML = parseInt(num1) + parseInt(num2);
+        }
+
+    </script>
+
 </head>
 <body>
+    <!--Primera prueba-->
+    <input id="Button1" type="button" value="Prueba 1" onclick="document.getElementById('demo').innerHTML = 'Hola Mundo'" />
 
+    <!--Segunda prueba-->
+    <input id="Button2" type="button" value="Prueba 2" onclick="document.getElementById('demo').innerHTML = '5'+5" />
+
+    <!--Tercera prueba-->
+    <input id="Button2" type="button" value="Prueba 1" onclick="document.getElementById('demo').innerHTML = 5+2+'2'" />
+
+    <!--Cuarta prueba-->
+    <input id="Button2" type="button" value="Prueba 1" onclick="document.getElementById('demo').innerHTML = '5'+'2'" />
+
+    <!--Quinta prueba-->
+    <input id="Text1" type="text" />
+    <input id="Text2" type="text" />
+    <input id="Button1" type="button" value="Prueba 1" onclick="suma(Text1.value,Text2.value)" />
+
+    <!--Ejercicio: Utilizando la imagen proporcionada por el profesor, cree un sitio web
+        que permita calcular el área de las primeras 5 figuras y el círculo. Debe crearla
+        en HTML, dar estilo con CSS y realizar los cálculos con funcionaes de JavaScript.
+        Cada uno de estos debe encontrarse en archivos independientes.-->
+
+    <p id="demo"></p>
 </body>
 </html>
